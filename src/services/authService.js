@@ -1,7 +1,7 @@
 // src/services/authService.js
 import axios from "axios";
 
-const API_BASE = "";
+const API_BASE = "https://cllgbackend-1.onrender.com/api/auth";
 
 export const registerUser = async(email, password, role) => {
     const allowedRoles = ["student", "teacher"];

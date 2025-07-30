@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       const response = await axios.post(
-        "",
+        "https://cllgbackend-1.onrender.com/api/auth/login",
         {
           email,
           password,
